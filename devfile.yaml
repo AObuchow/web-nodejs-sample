@@ -4,7 +4,7 @@ metadata:
 components:
   - name: tools
     container:
-      image: quay.io/devfile/universal-developer-image:ubi8-ddd4216
+      image: quay.io/aobuchow/universal-developer-image:stow-2.4.0
       endpoints:
         - exposure: public
           name: nodejs
