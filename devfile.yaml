@@ -4,12 +4,17 @@ metadata:
 components:
   - name: tools
     container:
-      image: quay.io/aobuchow/universal-developer-image:stow-2.4.0
+      image: quay.io/devfile/universal-developer-image:ubi8-latest
       endpoints:
         - exposure: public
           name: nodejs
           protocol: https
           targetPort: 3000
+      memoryLimit: 1G
+      mountSources: true
+  - name: second-component
+    container:
+      image: quay.io/devfile/universal-developer-image:ubi8-latest
       memoryLimit: 1G
       mountSources: true
 
